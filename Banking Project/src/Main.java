@@ -1,14 +1,10 @@
 import java.util.Scanner;
-
 public class Main {
-	
 	static Scanner scanner = new Scanner(System.in);
-	
 	public static void main(String[] args) {		
 		double balance = 0;
 		boolean isRunning = true;
 		int choice;
-		
 		while(isRunning){
 			System.out.println("**************");
 			System.out.println("PHILLIP'S BANK");
@@ -31,15 +27,12 @@ public class Main {
 		System.out.println("**************************");
 		System.out.println("THANK YOU HAVE A NICE DAY!");
 		System.out.println("**************************");
-
 		scanner.close();
 	}
-	
 	static void showBalance(double balance){
 		System.out.println("**************");
 		System.out.printf("$%.2f\n", balance);
 	}
-	
 	static double deposit(){
 		double amount;
 		System.out.print("DEPOSIT AMOUNT: ");
@@ -56,10 +49,8 @@ public class Main {
 	
 	static double withdraw(double balance){
 		double amount;
-		
 		System.out.print("WITHDRAW AMOUNT: ");
 		amount = scanner.nextDouble();
-		
 		if(amount > balance) {
 			System.out.println("INSUFFICENT FUNDS");
 			return 0;
@@ -73,15 +64,3 @@ public class Main {
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-
-
-
